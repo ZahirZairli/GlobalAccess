@@ -1,0 +1,44 @@
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<section class="w3l-main-slider" id="home">
+    <div class="banner-content">
+        <div id="demo-1"
+             data-zs-src='["/Traversal-Liberty/assets/images/banner1.jpg", "/Traversal-Liberty/assets/images/banner2.jpg","/Traversal-Liberty/assets/images/banner3.jpg", "/Traversal-Liberty/assets/images/banner4.jpg"]'
+             data-zs-overlay="dots">
+            <div class="demo-inner-content">
+                <div class="container">
+                    <div class="banner-infhny">
+                        <h3>@localizer["Səyahətlər üçün uzağa getməyə ehtiyacınız yoxdur."]</h3>
+                        <h6 class="mb-3">@localizer["Növbəti səyahətini elə indi planla."]</h6>
+                        <div class="flex-wrap search-wthree-field mt-md-5 mt-4">
+                            <form action="#" method="post" class="booking-form">
+                                <div class="row book-form">
+                                    <div class="form-input col-md-4 mt-md-0 mt-3">
+                                        <select name="selectpicker" class="selectpicker">
+                                            <option value="">@localizer["Turlar"]</option>
+                                            <option value="africa">@localizer["Almanya"]</option>
+                                            <option value="america">@localizer["Türkiyə"]</option>
+                                            <option value="asia">@localizer["Ukrayna"]</option>
+                                            <option value="eastern-europe">@localizer["Balkan"]</option>
+                                            <option value="europe">@localizer["Avropa"]</option>
+                                            <option value="south-america">@localizer["Misir"]</option>
+                                            <option value="south-america">@localizer["Amerika"]</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-input col-md-4 mt-md-0 mt-3">
+                                        <input type="date" name="" placeholder="Date" required="">
+                                    </div>
+                                    <div class="bottom-btn col-md-4 mt-md-0 mt-3">
+                                        <button class="btn btn-style btn-secondary">
+                                            <span class="fa fa-search mr-3"
+                                                  aria-hidden="true"></span> @localizer["Axtar"]
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

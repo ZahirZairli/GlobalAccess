@@ -1,0 +1,35 @@
+﻿@using EntityLayer.Concrete
+@model List<Comment>
+<div id="comment" class="comments mt-5">
+    <h4 class="side-title ">Yorumlar (<span id="commentcount">@Model.Count</span>)</h4>
+
+    @if (Model.Count == 0)
+    {
+        <a href="#reply">
+          Hələki yorum yoxdur.İlk yorum yazan siz olun.
+        </a>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            
+    <div class="media mt-4">
+        <div class="img-circle">
+            <img src="/Images/@item.AppUser.Image" onerror="this.src('/Images/user.png')" class="img-fluid" alt="...">
+        </div>
+        <div class="media-body">
+            <ul class="time-rply mb-2">
+                <li>
+                    <a href="#URL" class="name mt-0 mb-2 d-block">@item.AppUser.Name @item.AppUser.Surname</a>
+                    @(((DateTime)item.Date).ToString("dd-MMM-yyyy"))
+                </li>
+            </ul>
+            <p>
+                @item.Content
+            </p>
+        </div>
+    </div>
+        }
+    }
+</div>

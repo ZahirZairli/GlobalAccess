@@ -1,0 +1,55 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common;
+@using EntityLayer.Concrete
+@model IPagedList<Destination>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+
+<section class="grids-1 py-5">
+    <div class="grids py-lg-5 py-md-4">
+        <div class="container">
+            <h3 class="hny-title mb-5">Turlar</h3>
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-md-4 col-6 mt-md-0 mt-4">
+                        <div class="column">
+                            <a href="/Destination/Detail/@item.DestinationId"><img style="width:320px;height: 180px;" src="/Images/@item.Image" alt="@item.City" class="img-fluid"></a>
+                            <div class="info">
+                                <h4><a href="/Destination/Detail/@item.DestinationId">@item.City</a></h4>
+                                <p>@item.DayNight</p>
+                                    <p style="float:right;">@(((DateTime)item.Date).ToString("dd-MMM-yyyy"))</p>
+                                <div class="dst-btm">
+                                    <h6 class="">Qiymət</h6>
+                                    <span>₼ @item.Price</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="container mt-4">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions
+                {
+                DisplayLinkToFirstPage = PagedListDisplayMode.IfNeeded,
+                DisplayLinkToLastPage = PagedListDisplayMode.IfNeeded,
+                DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                DisplayLinkToNextPage = PagedListDisplayMode.Always,
+                LinkToFirstPageFormat = "<<",
+                LinkToPreviousPageFormat = "<",
+                LinkToNextPageFormat = ">",
+                LinkToLastPageFormat = ">>",
+                MaximumPageNumbersToDisplay = 5,
+                ContainerDivClasses = new[] { "pagination", "justify-content-center" },
+                UlElementClasses = new[] { "pagination" },
+                LiElementClasses = new[] { "page-item" },
+                PageClasses = new[] { "page-link" },
+                })
+            </div>
+        </div>
+    </div>
+</section>
+
