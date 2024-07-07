@@ -4,9 +4,14 @@ using DataAccessLayer.EntityFramework;
 using DocumentFormat.OpenXml.Bibliography;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PresentationLayer.Areas.Admin.Models;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace PresentationLayer.Areas.Admin.Controllers
 {

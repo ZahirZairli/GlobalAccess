@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using NuGet.Protocol;
 using PresentationLayer.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace PresentationLayer.Controllers
 {

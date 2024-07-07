@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IxzAlx3TbB5xUWYC11tM55paz3U9LRGr6nPIMhcF5+FgOGyWCrY3J3dJbZFXcKVTStfogvS0ayuzRu3sBDVEQA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Casper\\Desktop\\Traversal-Asp.Net-Core-7.0-\\DTOLayer\\DTOLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Casper\\.nuget\\packages\\microsoft.aspnetcore.razor.design\\2.2.0\\microsoft.aspnetcore.razor.design.2.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

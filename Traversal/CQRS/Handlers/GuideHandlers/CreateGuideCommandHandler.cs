@@ -2,6 +2,8 @@
 using EntityLayer.Concrete;
 using MediatR;
 using PresentationLayer.CQRS.Commands.GuideCommands;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace PresentationLayer.CQRS.Handlers.GuideHandlers
 {
