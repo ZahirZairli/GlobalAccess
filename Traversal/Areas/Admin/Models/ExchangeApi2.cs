@@ -1,4 +1,6 @@
-﻿namespace PresentationLayer.Areas.Admin.Models
+﻿using System;
+
+namespace PresentationLayer.Areas.Admin.Models
 {
     public class ExchangeApi2
     {

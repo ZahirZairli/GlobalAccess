@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using PresentationLayer.CQRS.Queries.DestinationQueries;
 using PresentationLayer.CQRS.Results.DestinationResults;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PresentationLayer.CQRS.Handlers.DestinationHandlers
 {

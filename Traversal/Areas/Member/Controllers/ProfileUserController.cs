@@ -5,7 +5,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Areas.Member.Models;
+using System;
+using System.IO;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace PresentationLayer.Areas.Member.Controllers
 {
@@ -47,7 +50,7 @@ namespace PresentationLayer.Areas.Member.Controllers
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
             if (p.Image != null)
             {
-                var resource = Directory.GetCurrentDirectory();
+                var resource = System.IO.Directory.GetCurrentDirectory();
                 var extension = Path.GetExtension(p.Image.FileName);
                 var imagename = Guid.NewGuid() + extension;
                 var savelocation = resource + "/wwwroot/Images/" + imagename;

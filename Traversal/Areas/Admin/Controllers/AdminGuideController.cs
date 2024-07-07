@@ -3,6 +3,8 @@ using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Areas.Admin.Models;
+using System;
+using System.IO;
 
 namespace PresentationLayer.Areas.Admin.Controllers
 {

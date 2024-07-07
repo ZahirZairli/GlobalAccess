@@ -14,9 +14,9 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer("server=DESKTOP-SDVG61S\\SQLEXPRESS;database=TraversalDb2024;integrated security=true;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("server=DESKTOP-SDVG61S\\SQLEXPRESS;database=TraversalDb2024;integrated security=true;TrustServerCertificate=True;");
             //optionsBuilder.UseSqlServer("workstation id=ZahirTraversalDb.mssql.somee.com;packet size=4096;user id=traversal_SQLLogin_2;pwd=ntnlqigrsv;data source=ZahirTraversalDb.mssql.somee.com;persist security info=False;initial catalog=ZahirTraversalDb;TrustServerCertificate=True;");
-            optionsBuilder.UseSqlServer("workstation id=Traversal2024.mssql.somee.com;packet size=4096;user id=traversal_SQLLogin_1;pwd=ssm33b4bil;data source=Traversal2024.mssql.somee.com;persist security info=False;initial catalog=Traversal2024;TrustServerCertificate=True;");
+            //optionsBuilder.UseSqlServer("workstation id=Traversal2024.mssql.somee.com;packet size=4096;user id=traversal_SQLLogin_1;pwd=ssm33b4bil;data source=Traversal2024.mssql.somee.com;persist security info=False;initial catalog=Traversal2024;TrustServerCertificate=True;");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<About2> About2s { get; set; }
