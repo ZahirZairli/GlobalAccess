@@ -17,7 +17,6 @@ Used Technologies
 
 
 
-![HomePage](./Traversal/GithubImages/login.png)
 
 
 
