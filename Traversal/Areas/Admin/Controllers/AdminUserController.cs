@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PresentationLayer.Areas.Member.Models;
+using System.Threading.Tasks;
 
 namespace PresentationLayer.Areas.Admin.Controllers
 {

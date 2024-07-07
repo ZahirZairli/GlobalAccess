@@ -3,6 +3,8 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.IO;
 
 namespace PresentationLayer.Areas.Admin.Controllers
 {

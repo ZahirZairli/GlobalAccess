@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace PresentationLayer.Areas.Admin.ViewComponents.AdminDashboard
 {

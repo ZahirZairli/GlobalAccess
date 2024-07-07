@@ -2,6 +2,7 @@
 using DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using X.PagedList;
 
 namespace PresentationLayer.Areas.Member.Controllers

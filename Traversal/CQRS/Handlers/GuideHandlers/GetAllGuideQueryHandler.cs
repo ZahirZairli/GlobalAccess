@@ -3,6 +3,15 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using PresentationLayer.CQRS.Queries.GuideQueries;
 using PresentationLayer.CQRS.Results.GuideResults;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
+
+
 
 namespace PresentationLayer.CQRS.Handlers.GuideHandlers
 {
