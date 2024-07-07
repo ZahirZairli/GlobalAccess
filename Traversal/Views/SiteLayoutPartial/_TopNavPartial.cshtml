@@ -1,8 +1,8 @@
-﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+﻿@*@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer*@
 <nav class="navbar navbar-expand-lg stroke">
     <h1>
         <a class="navbar-brand mr-lg-5" href="Default/Index">
-            Traversal
+            Global Access
         </a>
     </h1>
 
@@ -22,21 +22,21 @@
                 <a class="nav-link" href="/Admin/AdminGuide/Index">Admin</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Default/Index">@localizer["Ana Səhifə"]<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/Default/Index">Ana Səhifə<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Destination/Index">@localizer["Turlar"]</a>
+                <a class="nav-link" href="/Destination/Index">Təkliflər</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Guide/Index">@localizer["Bələdçilər"]</a>
+                <a class="nav-link" href="/Guide/Index">Bloqlar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/Contact/Index">@localizer["Əlaqə"]</a>
+                <a class="nav-link" href="/Contact/Index">Əlaqə</a>
             </li>
         </ul>
     </div>
     <div class="d-lg-block d-none">
-        <a href="/Member/ReservationUser/NewReservation" class="btn btn-style btn-secondary">@localizer["Rezervasiya et"]</a>
+        <a href="/Member/ReservationUser/NewReservation" class="btn btn-style btn-secondary">Müraciət et</a>
     </div>
     <!-- toggle switch for light and dark theme -->
     <div class="mobile-position">
