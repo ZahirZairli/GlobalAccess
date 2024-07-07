@@ -12,7 +12,7 @@
             <nav class="navbar navbar-expand-lg stroke">
                 <h1>
                     <a class="navbar-brand mr-lg-5" href="Default/Index">
-                        Traversal
+                        Global Access
                     </a>
                 </h1>
 
@@ -32,35 +32,41 @@
                             <a class="nav-link" href="/Admin/AdminGuide/Index">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Default/Index">@localizer["Ana Səhifə"]<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/Default/Index">Ana Səhifə<span class="sr-only">(current)</span></a>
+                            @*<a class="nav-link" href="/Default/Index">@localizer["Ana Səhifə <span class="sr-only">(current)</span></a>*@
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Destination/Index">@localizer["Turlar"]</a>
+                            <a class="nav-link" href="/Destination/Index">Təkliflər</a>
+                            @*<a class="nav-link" href="/Destination/Index">@localizer["Təkliflər </a>*@
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Guide/Index">@localizer["Bələdçilər"]</a>
+                            <a class="nav-link" href="/Guide/Index">Bloqlar</a>
+                            @*<a class="nav-link" href="/Guide/Index">@localizer["Bloqlar </a>*@
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Contact/Index">@localizer["Əlaqə"]</a>
+                            <a class="nav-link" href="/Contact/Index">Əlaqə</a>
+                            @*<a class="nav-link" href="/Contact/Index">@localizer["Əlaqə </a>*@
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Member/ReservationUser/NewReservation">@localizer["Rezervasiya edin"]</a>
+                            <a class="nav-link" href="/Member/ReservationUser/NewReservation">Müraciət et</a>
+                            @*<a class="nav-link" href="/Member/ReservationUser/NewReservation">@localizer["Müraciət et </a>*@
                         </li>
-                        <li class="nav-item dropdown">
+@*                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false">
-                                @localizer["Dil"]<span class="fa fa-angle-down"></span>
+                                @localizer["Dil <span class="fa fa-angle-down"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" asp-route-culture="az">@localizer["Azərbaycan"]  <img style="width: 30px !important;" src="/Images/azerbaijan.png" /></a>
-                                <a class="dropdown-item" asp-route-culture="en">@localizer["İngilis"]  <img style="width: 30px !important;" src="/Images/english.png" /></a>
-                                <a class="dropdown-item" asp-route-culture="de">@localizer["Alman"]  <img style="width: 30px !important;" src="/Images/germany.png" /> </a>
+                                <a class="dropdown-item" asp-route-culture="az">@localizer["Azərbaycan   <img style="width: 30px !important;" src="/Images/azerbaijan.png" /></a>
+                                <a class="dropdown-item" asp-route-culture="en">@localizer["İngilis   <img style="width: 30px !important;" src="/Images/english.png" /></a>
+                                <a class="dropdown-item" asp-route-culture="de">@localizer["Alman   <img style="width: 30px !important;" src="/Images/germany.png" /> </a>
                             </div>
-                        </li>
+                        </li>*@
                     </ul>
                 </div>
                 <div class="d-lg-block d-none">
-                    <a href="/Member/ReservationUser/NewReservation" class="btn btn-style btn-secondary">@localizer["Rezervasiya et"]</a>
+                    <a href="/Member/ReservationUser/NewReservation" class="btn btn-style btn-secondary">Müraciət et</a>
+                    @*<a href="/Member/ReservationUser/NewReservation" class="btn btn-style btn-secondary">@localizer["Rezervasiya et </a>*@
                 </div>
                 <!-- toggle switch for light and dark theme -->
                 <div class="mobile-position">
@@ -89,53 +95,53 @@
                         <div class="col-lg-6 column">
                             <div class="row">
                                 <div class="col-md-4 column">
-                                    <h3>@localizer["Şirkətimiz"]</h3>
+                                    <h3>Şirkətimiz</h3>
                                     <ul class="footer-gd-16">
-                                        <li><a href="/Default/Index">@localizer["Ana Səhifə"]</a></li>
-                                        <li><a href="#">@localizer["Haqqımızda"]</a></li>
-                                        <li><a href="/Destination/Index">@localizer["Turlar"]</a></li>
-                                        <li><a href="#">@localizer["Xidmətlər"]</a></li>
-                                        <li><a href="#">@localizer["Əlaqə"]</a></li>
+                                        <li><a href="/Default/Index">Ana Səhifə</a></li>
+                                        <li><a href="#">Haqqımızda</a></li>
+                                        <li><a href="/Destination/Index">Turlar</a></li>
+                                        <li><a href="#">Xidmətlər</a></li>
+                                        <li><a href="#">Əlaqə</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4 column mt-md-0 mt-4">
-                                    <h3>@localizer["Faydalı linklər"]</h3>
+                                    <h3>Faydalı linklər</h3>
                                     <ul class="footer-gd-16">
-                                        <li><a href="#url">@localizer["Hava yolları"]</a></li>
-                                        <li><a href="#url">@localizer["Xəstaxanalar"]</a></li>
-                                        <li><a href="#url">@localizer["Pul Dəyişmə Məntəqələri"]</a></li>
-                                        <li><a href="#">@localizer["Turizim ofisi"]</a></li>
-                                        <li><a href="#url">@localizer["Bizə yazın"]</a></li>
+                                        <li><a href="#url">Hava yolları </a></li>
+                                        <li><a href="#url">Xəstaxanalar </a></li>
+                                        <li><a href="#url">Pul Dəyişmə Məntəqələri </a></li>
+                                        <li><a href="#">Turizim ofisi </a></li>
+                                        <li><a href="#url">Bizə yazın </a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4 column mt-md-0 mt-4">
-                                    <h3>@localizer["Xidmətlərimiz"]</h3>
+                                    <h3>Xidmətlərimiz </h3>
                                     <ul class="footer-gd-16">
-                                        <li><a href="#url">@localizer["Servisler"]</a></li>
-                                        <li><a href="#url">@localizer["Ring səfərləri"]</a></li>
-                                        <li><a href="/Guide/Index">@localizer["Bələdçilərimiz"]</a></li>
-                                        <li><a href="#">@localizer["Azərbaycan ofisi"]</a></li>
-                                        <li><a href="#url">@localizer["Türkiyə ofisi"]</a></li>
+                                        <li><a href="#url">Servisler </a></li>
+                                        <li><a href="#url">Ring səfərləri </a></li>
+                                        <li><a href="/Guide/Index">Bələdçilərimiz </a></li>
+                                        <li><a href="#">Azərbaycan ofisi </a></li>
+                                        <li><a href="#url">Türkiyə ofisi </a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
-                            <h3>@localizer["Email bülleteni"]</h3>
+                            <h3>Email bülleteni </h3>
                             <div class="end-column">
-                                <h4>@localizer["Son kompaniyalardan xəbardar olun."]</h4>
+                                <h4>Son kompaniyalardan xəbardar olun. </h4>
                                 <form action="#" class="subscribe" method="post">
-                                    <input type="email" name="email" placeholder="@localizer["Email Adresi"]" required="">
-                                    <button type="submit">@localizer["Abonə ol"]</button>
+                                    <input type="email" name="email" placeholder="Email Adresi " required="">
+                                    <button type="submit">Abonə ol </button>
                                 </form>
-                                <p>@localizer["Kompaniyalardan xəbərdar olmaq üçün abonə olun.Spam mesajlar almayacaqsınız"].</p>
+                                <p>Kompaniyalardan xəbərdar olmaq üçün abonə olun.Spam mesajlar almayacaqsınız .</p>
                             </div>
                         </div>
                     </div>
                     <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
                         <div class="columns text-lg-left text-center">
                             <p>
-                                @DateTime.Now.Year Traversal.@localizer["Bütün hüquqlar qorunur"]<a href="https://zahirzairli.com/" target="_blank">
+                                @DateTime.Now.Year Traversal.Bütün hüquqlar qorunur <a href="https://zahirzairli.com/" target="_blank">
                                     Zahir Zairli
                                 </a>
                             </p>
