@@ -1,8 +1,5 @@
-# Traversal-Asp.Net-Core-7.0-
-Link for admin Panel login: https://zairlizahir.bsite.net/
-Admin details:
-username: zahir
-password: Tankionline2017@
+# Global Access
+
 Used Technologies
 1.C#
 2.Asp.Net Core 7.0
@@ -20,22 +17,7 @@ Used Technologies
 
 
 
-
-![HomePage](./Traversal/GithubImages/TraversalHome.png)
 ![HomePage](./Traversal/GithubImages/login.png)
-![HomePage](./Traversal/GithubImages/TraversalDestinations.png)
-![HomePage](./Traversal/GithubImages/TraversalComment.png)
-![HomePage](./Traversal/GithubImages/Roles.png)
-![HomePage](./Traversal/GithubImages/ResetPasword.png)
-![HomePage](./Traversal/GithubImages/Movie.png)
-![HomePage](./Traversal/GithubImages/MemberReservation.png)
-![HomePage](./Traversal/GithubImages/MemberDashboard.png)
-![HomePage](./Traversal/GithubImages/Exchange.png)
-![HomePage](./Traversal/GithubImages/Excel.png)
-![HomePage](./Traversal/GithubImages/Error404.png)
-![HomePage](./Traversal/GithubImages/AdminMail.png)
-![HomePage](./Traversal/GithubImages/AdminDestinatins.png)
-![HomePage](./Traversal/GithubImages/AdminDashboard.png)
-![HomePage](./Traversal/GithubImages/AccessDenied.png)
+
 
 
